@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Digital Twin - Rithik Sharon A</title>
+    <meta name="description" content="AI-powered digital twin representing Rithik Sharon A. Chat with AI to learn about his skills, experience, and projects.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="avatar">🤖</div>
+            <div class="header-content">
+                <h1>Rithik Sharon A - Digital Twin</h1>
+                <p class="subtitle">AI-Powered Career Assistant</p>
+                <p class="status">
+                    <span class="status-dot"></span>
+                    Online & Ready to Chat
+                </p>
+            </div>
+        </header>
+
+        <!-- Info Cards -->
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-icon">💻</div>
+                <div class="info-text">
+                    <h3>MERN Stack Developer</h3>
+                    <p>React, Node.js, Express, MongoDB</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🤖</div>
+                <div class="info-text">
+                    <h3>AI Specialist</h3>
+                    <p>Agentic AI, OpenAI APIs</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="info-icon">🚀</div>
+                <div class="info-text">
+                    <h3>Innovative Builder</h3>
+                    <p>Scalable Web Applications</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>💬 Chat with My Digital Twin</h2>
+                <p>Ask me anything about Rithik's skills, experience, or projects!</p>
+            </div>
+
+            <!-- Messages -->
+            <div id="messages" class="messages">
+                <div class="message bot">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Hi! I'm Rithik Sharon A's AI Digital Twin. I can answer questions about his skills, experience, projects, and more. What would you like to know?</p>
+                        <span class="message-time" id="initial-time"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Questions -->
+            <div id="quick-questions" class="quick-questions">
+                <p class="quick-questions-title">Quick Questions:</p>
+                <div class="quick-questions-grid">
+                    <button class="quick-question-btn" data-question="What are your technical skills?">
+                        💻 Technical Skills
+                    </button>
+                    <button class="quick-question-btn" data-question="Tell me about your AI experience">
+                        🤖 AI Experience
+                    </button>
+                    <button class="quick-question-btn" data-question="What projects have you built?">
+                        🚀 Projects
+                    </button>
+                    <button class="quick-question-btn" data-question="How can I contact you?">
+                        📧 Contact Info
+                    </button>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div id="typing-indicator" class="typing-indicator" style="display: none;">
+                <div class="message-avatar">🤖</div>
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- Input -->
+            <div class="chat-input">
+                <input 
+                    type="text" 
+                    id="user-input" 
+                    placeholder="Ask me anything about Rithik..." 
+                    autocomplete="off"
+                >
+                <button id="send-btn" class="send-btn">
+                    <span>➤</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-links">
+                <a href="mailto:rithiksharon.a@gmail.com" target="_blank">📧 Email</a>
+                <a href="https://www.linkedin.com/in/rithik-sharon/" target="_blank">💼 LinkedIn</a>
+                <a href="https://github.com/Rithik-Sharon-A" target="_blank">💻 GitHub</a>
+            </div>
+            <p class="footer-note">
+                Powered by OpenRouter AI • Built with ❤️ by Rithik Sharon A
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="knowledge-base.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
+
