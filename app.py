@@ -25,7 +25,7 @@ client = OpenAI(
 
 # Configuration
 CONFIG = {
-    'MODEL': 'meta-llama/llama-3.1-8b-instruct:free',  # FREE model from OpenRouter!
+    'MODEL': os.getenv('OPENROUTER_MODEL', 'mistralai/mistral-7b-instruct:free'),  # default free model
     'MAX_TOKENS': 250,
     'TEMPERATURE': 0.7
 }
@@ -153,18 +153,16 @@ def home():
 if __name__ == '__main__':
     # Check for API key
     if not os.getenv('OPENROUTER_API_KEY'):
-        print("⚠️  WARNING: OPENROUTER_API_KEY not found in .env file")
-        print("The chatbot will use fallback responses")
+        print('WARNING: OPENROUTER_API_KEY not found (set it in Render env vars or local .env)')
+        print('The chatbot will use fallback responses')
     else:
-        print("✅ OpenRouter API key loaded successfully")
-    
+        print('OpenRouter API key loaded successfully')
+
     # Use PORT from environment for production (Render, etc.) or default to 5000
     port = int(os.getenv('PORT', 5000))
-    
-    print(f"🤖 Career Digital Twin API")
-    print(f"📊 Using FREE model: {CONFIG['MODEL']} via OpenRouter")
-    print(f"💰 Cost: $0.00 - Completely FREE!")
-    print(f"🌐 Running on http://0.0.0.0:{port}")
-    
-    app.run(host='0.0.0.0', port=port, debug=False)
 
+    print('Career Digital Twin API')
+    print(f'Using model: {CONFIG["MODEL"]} via OpenRouter')
+    print(f'Listening on: http://0.0.0.0:{port}')
+
+    app.run(host='0.0.0.0', port=port, debug=False)
