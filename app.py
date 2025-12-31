@@ -25,7 +25,7 @@ client = OpenAI(
 
 # Configuration
 CONFIG = {
-    'MODEL': 'gpt-4o-mini',
+    'MODEL': 'meta-llama/llama-3.1-8b-instruct:free',  # FREE model from OpenRouter!
     'MAX_TOKENS': 250,
     'TEMPERATURE': 0.7
 }
@@ -159,7 +159,8 @@ if __name__ == '__main__':
         print("✅ OpenRouter API key loaded successfully")
     
     print(f"🤖 Career Digital Twin API running on http://localhost:5000")
-    print(f"📊 Using model: {CONFIG['MODEL']} via OpenRouter")
+    print(f"📊 Using FREE model: {CONFIG['MODEL']} via OpenRouter")
+    print(f"💰 Cost: $0.00 - Completely FREE!")
     
     app.run(debug=True, port=5000)
 
