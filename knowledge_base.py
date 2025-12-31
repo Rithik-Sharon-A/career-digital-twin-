@@ -1,6 +1,9 @@
-// Knowledge Base for Rithik Sharon A's Digital Twin
+"""
+Knowledge Base for Rithik Sharon A's Digital Twin
+Contains all professional information for RAG system
+"""
 
-const knowledgeBase = `
+KNOWLEDGE_BASE = """
 === RITHIK SHARON A - PROFESSIONAL PROFILE ===
 
 ABOUT
@@ -36,15 +39,17 @@ Backend Development:
 - API integration
 - Database design and optimization
 - Server-side logic
+- Python & Flask (Backend APIs)
 
 AI & Machine Learning:
 - Agentic AI implementation
-- OpenAI API integration
+- OpenAI API & SDK integration
 - OpenRouter API
 - AI-powered automation
 - Workflow optimization with AI
 - Intelligent application development
 - Natural language processing applications
+- RAG (Retrieval-Augmented Generation) systems
 
 Development Tools & Practices:
 - Git/GitHub (Version control)
@@ -55,6 +60,8 @@ Development Tools & Practices:
 - Agile methodology
 - Test-driven development
 - CI/CD practices
+- Python virtual environments
+- Flask/FastAPI
 
 === KEY PROJECTS ===
 
@@ -71,15 +78,17 @@ GitHub: https://github.com/Rithik-Sharon-A/personal-blog
 Status: Live and actively maintained
 
 2. Career Digital Twin (This Project!)
-Tech Stack: Vanilla JavaScript, OpenRouter AI, HTML/CSS
+Tech Stack: Python, Flask, OpenAI SDK, JavaScript, HTML/CSS
 Description: AI-powered chatbot that serves as a digital representation, answering questions about skills, experience, and projects
 Features:
 - RAG (Retrieval-Augmented Generation) system
+- OpenAI GPT-4o-mini integration
 - Natural language understanding
 - Real-time AI responses
 - Comprehensive knowledge base
 - Beautiful, responsive UI
-GitHub: https://github.com/Rithik-Sharon-A/career-digital-twin
+- RESTful API backend
+GitHub: https://github.com/Rithik-Sharon-A/career-digital-twin-
 Purpose: Innovative way for recruiters to learn about me 24/7
 
 3. Additional Projects in Development:
@@ -100,12 +109,13 @@ Full Stack Web Development:
 
 AI Integration & Automation:
 - Implementing Agentic AI systems
-- OpenAI API integration for intelligent features
+- OpenAI API & SDK integration for intelligent features
 - Automating complex workflows
 - Building conversational AI
 - Natural language processing
 - AI-driven user experiences
 - Practical AI applications
+- RAG systems with vector databases
 
 === WHAT MAKES ME UNIQUE ===
 
@@ -116,6 +126,7 @@ AI Integration & Automation:
 5. Problem Solver: Strong analytical and debugging skills
 6. Quick Learner: Rapidly adapts to new technologies and frameworks
 7. User-Centric: Focus on creating excellent user experiences
+8. Full Stack + AI: Can build complete solutions from frontend to AI backend
 
 === WORK APPROACH ===
 
@@ -156,9 +167,11 @@ Currently Learning/Working On:
 - Advanced Agentic AI implementations
 - Multi-agent systems
 - AI workflow automation
+- OpenAI SDK and API best practices
 - Performance optimization techniques
 - Modern web architecture patterns
 - Cloud deployment strategies
+- Python for AI/ML applications
 
 Professional Interests:
 - Building AI-powered web applications
@@ -208,6 +221,7 @@ Foundation:
 - Software engineering principles
 - Database management
 - System design
+- Python programming
 
 Continuous Learning:
 - Latest web technologies and frameworks
@@ -217,6 +231,7 @@ Continuous Learning:
 - Performance optimization techniques
 - Security best practices
 - UX/UI design principles
+- OpenAI and AI SDKs
 
 Learning Resources:
 - Online courses and tutorials
@@ -235,9 +250,11 @@ Technical Achievements:
 - Implemented complex state management
 - Created reusable component libraries
 - Optimized application performance
+- Built Python APIs with Flask
+- Integrated OpenAI SDK for intelligent features
 
 Project Highlights:
-- Career Digital Twin (Innovative AI representation)
+- Career Digital Twin (Innovative AI representation with Python backend)
 - Modern portfolio with AI chatbot
 - Scalable web applications
 - Responsive and accessible designs
@@ -246,10 +263,10 @@ Project Highlights:
 === FREQUENTLY ASKED QUESTIONS ===
 
 Q: What's your primary tech stack?
-A: MERN Stack (MongoDB, Express, React, Node.js) with a specialization in AI integration using OpenAI and OpenRouter APIs.
+A: MERN Stack (MongoDB, Express, React, Node.js) with a specialization in AI integration using Python, OpenAI SDK, and OpenAI APIs.
 
 Q: What makes you different from other developers?
-A: My unique combination of full-stack MERN expertise with specialized knowledge in Agentic AI and OpenAI APIs. I don't just build websites - I build intelligent, automated solutions.
+A: My unique combination of full-stack MERN expertise with specialized knowledge in Agentic AI, OpenAI APIs, and Python. I don't just build websites - I build intelligent, automated solutions.
 
 Q: What kind of projects do you enjoy most?
 A: I love projects that combine web development with AI, especially those that automate workflows and improve user experiences through intelligent features.
@@ -258,7 +275,7 @@ Q: Are you available for work?
 A: Yes! I'm open to full-time opportunities, freelance projects, and collaborations. Reach out at rithiksharon.a@gmail.com
 
 Q: What's your experience with AI?
-A: I specialize in Agentic AI and OpenAI API integration. I've built AI chatbots, automated workflow systems, and intelligent applications that leverage cutting-edge AI technology.
+A: I specialize in Agentic AI, OpenAI API, and OpenAI SDK integration. I've built AI chatbots with Python backends, automated workflow systems, and intelligent applications that leverage cutting-edge AI technology.
 
 Q: How do you stay updated with technology?
 A: I actively follow tech blogs, participate in developer communities, work on personal projects, and continuously learn through online courses and documentation.
@@ -277,5 +294,6 @@ Feel free to reach out at rithiksharon.a@gmail.com or connect with me on LinkedI
 
 - Rithik Sharon A
   MERN Stack Developer | AI Specialist
-`;
+"""
+
 

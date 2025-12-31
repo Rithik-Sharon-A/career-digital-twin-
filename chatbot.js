@@ -74,49 +74,16 @@ async function handleSendMessage() {
     }
 }
 
-// Get AI response
+// Get AI response from Python Flask backend
 async function getAIResponse(userMessage) {
-    // Check if API key is configured
-    if (!CONFIG.OPENROUTER_API_KEY || CONFIG.OPENROUTER_API_KEY === 'YOUR_OPENROUTER_API_KEY_HERE') {
-        return getFallbackResponse(userMessage);
-    }
-
     try {
-        const response = await fetch(CONFIG.API_URL, {
+        const response = await fetch('http://localhost:5000/api/chat', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${CONFIG.OPENROUTER_API_KEY}`,
-                'HTTP-Referer': window.location.origin,
-                'X-Title': 'Career Digital Twin - Rithik Sharon A'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                model: CONFIG.MODEL,
-                messages: [
-                    {
-                        role: 'system',
-                        content: `You are Rithik Sharon A's AI-powered Digital Twin. Use the following comprehensive knowledge base to answer questions accurately, professionally, and conversationally.
-
-KNOWLEDGE BASE:
-${knowledgeBase}
-
-GUIDELINES:
-- Answer based on the knowledge base provided
-- Be friendly, professional, and conversational
-- Keep responses concise but informative (2-4 sentences typically)
-- If asked something not in the knowledge base, politely suggest contacting Rithik directly
-- Include relevant links when mentioning contact info or projects
-- Show enthusiasm about Rithik's skills and accomplishments
-- Be honest and authentic
-- If unsure, recommend reaching out directly rather than making up information`
-                    },
-                    {
-                        role: 'user',
-                        content: userMessage
-                    }
-                ],
-                temperature: CONFIG.TEMPERATURE,
-                max_tokens: CONFIG.MAX_TOKENS
+                message: userMessage
             })
         });
 
@@ -125,9 +92,9 @@ GUIDELINES:
         }
 
         const data = await response.json();
-        return data.choices[0].message.content;
+        return data.response;
     } catch (error) {
-        console.error('OpenRouter API Error:', error);
+        console.error('Python API Error:', error);
         return getFallbackResponse(userMessage);
     }
 }
@@ -209,7 +176,8 @@ function getCurrentTime() {
 
 // Console info
 console.log('%c🤖 Career Digital Twin Loaded', 'color: #7c3aed; font-size: 16px; font-weight: bold');
-console.log('To enable AI responses, update the OPENROUTER_API_KEY in chatbot.js');
-console.log('Get your free API key at: https://openrouter.ai/keys');
-console.log('Without an API key, the chatbot will use smart fallback responses.');
+console.log('🐍 Python Backend: Make sure Flask server is running on http://localhost:5000');
+console.log('📝 To start: python app.py');
+console.log('🔑 Configure OpenAI API key in .env file');
+console.log('Without the backend running, the chatbot will use smart fallback responses.');
 

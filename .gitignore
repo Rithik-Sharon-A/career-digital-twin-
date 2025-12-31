@@ -1,5 +1,16 @@
 # API Configuration (contains sensitive keys)
-config.js
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
 
 # Optional: Node modules if you add any build tools later
 node_modules/
