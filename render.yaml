@@ -1,0 +1,11 @@
+services:
+  # Backend API
+  - type: web
+    name: career-digital-twin-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: OPENROUTER_API_KEY
+        sync: false
+
