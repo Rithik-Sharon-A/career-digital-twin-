@@ -1,11 +1,5 @@
 // Career Digital Twin - Chatbot Logic
-// NOTE: Configuration is loaded from config.js (not committed to Git)
-
-// Verify CONFIG is loaded
-if (typeof CONFIG === 'undefined') {
-    console.error('❌ CONFIG not loaded! Make sure config.js is included before chatbot.js');
-    alert('Configuration error: config.js not found or not loaded properly!');
-}
+// NOTE: Frontend connects to Python Flask backend on http://localhost:5000
 
 // DOM Elements
 const messagesContainer = document.getElementById('messages');
@@ -177,7 +171,7 @@ function getCurrentTime() {
 // Console info
 console.log('%c🤖 Career Digital Twin Loaded', 'color: #7c3aed; font-size: 16px; font-weight: bold');
 console.log('🐍 Python Backend: Make sure Flask server is running on http://localhost:5000');
-console.log('📝 To start: python app.py');
-console.log('🔑 Configure OpenAI API key in .env file');
+console.log('📝 To start: Run start.bat or python app.py');
+console.log('🔑 Configure OpenRouter API key in .env file');
 console.log('Without the backend running, the chatbot will use smart fallback responses.');
 
