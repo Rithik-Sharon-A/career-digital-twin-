@@ -1,4 +1,4 @@
-# 🤖 Career Digital Twin - Rithik Sharon A
+# Career Digital Twin - Rithik Sharon A
 
 An AI-powered digital twin chatbot that represents me professionally. Recruiters, colleagues, and anyone interested can chat with this AI to learn about my skills, experience, projects, and more - 24/7!
 
@@ -8,7 +8,7 @@ An AI-powered digital twin chatbot that represents me professionally. Recruiters
 
 ---
 
-## 🌟 What Is This?
+## What Is This?
 
 This is my **Career Digital Twin** - an AI chatbot that knows everything about my professional profile. It uses:
 - **RAG (Retrieval-Augmented Generation)** with a comprehensive knowledge base
@@ -18,75 +18,75 @@ This is my **Career Digital Twin** - an AI chatbot that knows everything about m
 
 ---
 
-## ✨ Features
+## Features
 
-- 🤖 **AI-Powered Responses** - Natural, intelligent conversations
-- 📚 **Comprehensive Knowledge** - Knows about skills, projects, experience
-- 💬 **Quick Questions** - Pre-defined buttons for common queries
-- 📱 **Fully Responsive** - Works perfectly on all devices
-- ⚡ **Fast & Lightweight** - No heavy frameworks
-- 🎨 **Beautiful Design** - Modern gradient UI with animations
-- 🔄 **Fallback System** - Works even without API key
-- 💯 **Free to Use** - Uses free AI model
+- **AI-Powered Responses** - Natural, intelligent conversations
+- **Comprehensive Knowledge** - Knows about skills, projects, experience
+- **Quick Questions** - Pre-defined buttons for common queries
+- **Fully Responsive** - Works perfectly on all devices
+- **Fast & Lightweight** - No heavy frameworks
+- **Beautiful Design** - Modern gradient UI with animations
+- **Fallback System** - Works even without API key
+- **Free to Use** - Uses free AI model
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Option 1: With AI (Recommended)
 
 1. **Get OpenRouter API Key** (FREE)
-   ```
-   Visit: https://openrouter.ai/keys
-   Sign up and create a new key
-   ```
+ ```
+ Visit: https://openrouter.ai/keys
+ Sign up and create a new key
+ ```
 
 2. **Setup Configuration**
-   - Copy `config.example.js` to `config.js`
-   - Open `config.js`
-   - Replace `YOUR_OPENROUTER_API_KEY_HERE` with your actual API key
-   - The `config.js` file is git-ignored for security
+ - Copy `config.example.js` to `config.js`
+ - Open `config.js`
+ - Replace `YOUR_OPENROUTER_API_KEY_HERE` with your actual API key
+ - The `config.js` file is git-ignored for security
 
 3. **Open in Browser**
-   ```
-   Simply open index.html in your browser!
-   ```
+ ```
+ Simply open index.html in your browser!
+ ```
 
 ### Option 2: Without AI (Still Works!)
 
 1. **Just Open It**
-   ```
-   Open index.html in your browser
-   ```
-   The chatbot will use smart keyword-based responses. Still helpful!
+ ```
+ Open index.html in your browser
+ ```
+ The chatbot will use smart keyword-based responses. Still helpful!
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 career-digital-twin/
-├── index.html              # Main HTML file
-├── styles.css             # All styles and animations
-├── chatbot.js            # Chatbot logic with OpenRouter integration
-├── knowledge-base.js     # Comprehensive knowledge about me
-├── README.md            # This file
-└── SETUP.md            # Detailed setup guide
+ index.html # Main HTML file
+ styles.css # All styles and animations
+ chatbot.js # Chatbot logic with OpenRouter integration
+ knowledge-base.js # Comprehensive knowledge about me
+ README.md # This file
+ SETUP.md # Detailed setup guide
 ```
 
 ---
 
-## 🎯 How It Works
+## How It Works
 
 ```
 User asks question
-        ↓
+
 Chatbot receives message
-        ↓
+
 Sends to OpenRouter AI with knowledge base
-        ↓
+
 AI generates intelligent response
-        ↓
+
 User receives answer
 ```
 
@@ -102,9 +102,9 @@ User receives answer
 
 ---
 
-## 💰 Cost
+## Cost
 
-**FREE!** 🎉
+**FREE!**
 
 - Uses `meta-llama/llama-3.1-8b-instruct:free` model
 - OpenRouter free tier
@@ -113,7 +113,7 @@ User receives answer
 
 ---
 
-## 🎨 Customization
+## Customization
 
 ### Update Information
 
@@ -128,10 +128,10 @@ Edit `knowledge-base.js` to update:
 
 In `chatbot.js`, change the model:
 ```javascript
-MODEL: 'meta-llama/llama-3.1-8b-instruct:free'  // Current (FREE)
+MODEL: 'meta-llama/llama-3.1-8b-instruct:free' // Current (FREE)
 // Or upgrade to:
-MODEL: 'openai/gpt-4o-mini'                      // Premium
-MODEL: 'anthropic/claude-3-haiku'                // Premium
+MODEL: 'openai/gpt-4o-mini' // Premium
+MODEL: 'anthropic/claude-3-haiku' // Premium
 ```
 
 ### Styling
@@ -144,7 +144,7 @@ Edit `styles.css`:
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 ### GitHub Pages
 1. Push to GitHub
@@ -167,13 +167,13 @@ vercel
 
 ---
 
-## 🔒 Security
+## Security
 
 ### API Key Safety
-- ⚠️ Don't commit API key to public repos
-- ✅ Use environment variables for production
-- ✅ Enable domain restrictions in OpenRouter dashboard
-- ✅ Monitor usage regularly
+- Don't commit API key to public repos
+- Use environment variables for production
+- Enable domain restrictions in OpenRouter dashboard
+- Monitor usage regularly
 
 ### For Production:
 Create a `.env` file:
@@ -185,7 +185,7 @@ Update `chatbot.js` to read from environment.
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Chatbot Not Responding
 - Check API key is correct
@@ -206,31 +206,31 @@ Update `chatbot.js` to read from environment.
 
 ---
 
-## 📊 Features Breakdown
+## Features Breakdown
 
 ### Current Features:
-- ✅ AI-powered conversations
-- ✅ RAG with knowledge base
-- ✅ Quick question buttons
-- ✅ Typing indicators
-- ✅ Message timestamps
-- ✅ Responsive design
-- ✅ Smooth animations
-- ✅ Error handling
-- ✅ Fallback system
+- AI-powered conversations
+- RAG with knowledge base
+- Quick question buttons
+- Typing indicators
+- Message timestamps
+- Responsive design
+- Smooth animations
+- Error handling
+- Fallback system
 
 ### Potential Enhancements:
-- 💡 Chat history (localStorage)
-- 💡 Voice input/output
-- 💡 Multi-language support
-- 💡 File sharing
-- 💡 Analytics tracking
-- 💡 Custom themes
-- 💡 Export chat
+- Chat history (localStorage)
+- Voice input/output
+- Multi-language support
+- File sharing
+- Analytics tracking
+- Custom themes
+- Export chat
 
 ---
 
-## 🎓 What I Learned Building This
+## What I Learned Building This
 
 - OpenRouter API integration
 - RAG (Retrieval-Augmented Generation)
@@ -241,19 +241,19 @@ Update `chatbot.js` to read from environment.
 
 ---
 
-## 📝 About Me
+## About Me
 
 **Rithik Sharon A**
-- 💼 MERN Stack Developer
-- 🤖 AI Specialist (Agentic AI, OpenAI APIs)
-- 🚀 Building innovative web applications
-- 📧 rithiksharon.a@gmail.com
-- 💼 [LinkedIn](https://www.linkedin.com/in/rithik-sharon/)
-- 💻 [GitHub](https://github.com/Rithik-Sharon-A)
+- MERN Stack Developer
+- AI Specialist (Agentic AI, OpenAI APIs)
+- Building innovative web applications
+- rithiksharon.a@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/rithik-sharon/)
+- [GitHub](https://github.com/Rithik-Sharon-A)
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Want to improve this Digital Twin?
 1. Fork the repo
@@ -263,13 +263,13 @@ Want to improve this Digital Twin?
 
 ---
 
-## 📄 License
+## License
 
 MIT License - Feel free to use this for your own Digital Twin!
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - OpenRouter for free AI API
 - Llama 3.1 8B for powerful model
@@ -277,7 +277,7 @@ MIT License - Feel free to use this for your own Digital Twin!
 
 ---
 
-## 📞 Contact
+## Contact
 
 Questions about this project or want to work together?
 - Email: rithiksharon.a@gmail.com
@@ -286,19 +286,19 @@ Questions about this project or want to work together?
 
 ---
 
-## ⭐ Star This Repo!
+## Star This Repo!
 
-If you find this Digital Twin useful, please star the repo! ⭐
+If you find this Digital Twin useful, please star the repo!
 
 ---
 
-**Built with ❤️ by Rithik Sharon A**
+**Built with by Rithik Sharon A**
 
 *Combining MERN Stack expertise with AI to create innovative solutions*
 
 ---
 
-## 🎯 Quick Links
+## Quick Links
 
 - [Live Demo](#) - See it in action!
 - [Setup Guide](SETUP.md) - Detailed setup instructions
