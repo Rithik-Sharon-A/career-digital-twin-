@@ -158,11 +158,13 @@ if __name__ == '__main__':
     else:
         print("✅ OpenRouter API key loaded successfully")
     
+    # Use PORT from environment for production (Render, etc.) or default to 5000
+    port = int(os.getenv('PORT', 5000))
+    
     print(f"🤖 Career Digital Twin API")
     print(f"📊 Using FREE model: {CONFIG['MODEL']} via OpenRouter")
     print(f"💰 Cost: $0.00 - Completely FREE!")
+    print(f"🌐 Running on http://0.0.0.0:{port}")
     
-    # Use PORT from environment for production (Render, etc.) or default to 5000
-    port = int(os.getenv('PORT', 5000))
     app.run(host='0.0.0.0', port=port, debug=False)
 
