@@ -8,7 +8,7 @@ from flask_cors import CORS
 from openai import OpenAI
 import os
 from dotenv import load_dotenv
-from knowledge_base import KNOWLEDGE_BASE
+from knowledge_base import SYSTEM_PROMPT
 
 # Load environment variables
 load_dotenv()
@@ -30,47 +30,30 @@ CONFIG = {
     'TEMPERATURE': 0.7
 }
 
-# System prompt with RAG
-SYSTEM_PROMPT = f"""You are Rithik Sharon A's AI-powered Digital Twin. Use the following comprehensive knowledge base to answer questions accurately, professionally, and conversationally.
-
-KNOWLEDGE BASE:
-{KNOWLEDGE_BASE}
-
-GUIDELINES:
-- Answer based on the knowledge base provided
-- Be friendly, professional, and conversational
-- Keep responses concise but informative (2-4 sentences typically)
-- If asked something not in the knowledge base, politely suggest contacting Rithik directly
-- Include relevant links when mentioning contact info or projects
-- Show enthusiasm about Rithik's skills and accomplishments
-- Be honest and authentic
-- If unsure, recommend reaching out directly rather than making up information"""
-
-
 def get_fallback_response(message):
     """Fallback responses when API is unavailable"""
     msg = message.lower()
     
     if 'skill' in msg or 'technology' in msg or 'tech stack' in msg:
-        return "Rithik is a MERN Stack Developer specializing in React, Node.js, Express, and MongoDB. He also has expertise in Agentic AI and OpenAI APIs, combining full-stack development with cutting-edge AI integration!"
+        return "Rithik Sharon A is a fresher MERN Stack Developer based in Chennai, Tamil Nadu, India. His skills include React.js, Node.js, Express.js, MongoDB, and JavaScript (ES6+)."
     
     if 'project' in msg:
-        return "Rithik has built several exciting projects including a modern Portfolio Website, this Career Digital Twin using AI, and various AI-powered applications. Check out his GitHub at github.com/Rithik-Sharon-A to see more!"
+        return "Rithik has project-based experience. Notable projects include an Agentic AI Digital Twin (integrated into a MERN-based portfolio) and a MERN E-commerce Platform."
     
     if 'ai' in msg or 'artificial intelligence' in msg or 'openai' in msg:
-        return "Rithik specializes in Agentic AI and OpenAI APIs! He uses these technologies to automate complex workflows, build intelligent chatbots, and create AI-powered web applications that enhance user experiences."
+        return "Rithik works on Agentic AI, prompt engineering, autonomous agents, and OpenAI API integration (project-based)."
     
     if 'experience' in msg or 'work' in msg or 'background' in msg:
-        return "Rithik is a MERN Stack Developer with strong expertise in building scalable, responsive web applications. He specializes in integrating Agentic AI and OpenAI APIs to create intelligent, automated solutions."
+        return "Rithik Sharon A is a fresher MERN Stack Developer based in Chennai, Tamil Nadu, India. His skills include React.js, Node.js, Express.js, MongoDB, and JavaScript (ES6+)."
     
     if 'contact' in msg or 'email' in msg or 'reach' in msg or 'hire' in msg:
-        return "You can reach Rithik at rithiksharon.a@gmail.com (he usually responds within 24-48 hours) or connect on LinkedIn at linkedin.com/in/rithik-sharon/. He's open to full-time opportunities and freelance projects!"
+        return "You can reach Rithik at rithiksharon.a@gmail.com. GitHub: github.com/Rithik-Sharon-A. LinkedIn: linkedin.com/in/rithik-sharon/."
     
     if 'available' in msg or 'looking for work' in msg:
-        return "Yes! Rithik is open to exciting opportunities including full-time positions, freelance projects, and collaborations. Feel free to reach out at rithiksharon.a@gmail.com to discuss opportunities."
+        return "The knowledge base does not specify availability details. You can contact Rithik at rithiksharon.a@gmail.com."
     
     if 'resume' in msg or 'cv' in msg:
-        return "You can download Rithik's resume from his portfolio website. It contains detailed information about his education, experience, skills, and projects. Visit his portfolio or email him directly at rithiksharon.a@gmail.com!"
+        return "Resume download information is not available in the knowledge base. You can contact Rithik at rithiksharon.a@gmail.com."
     
     if 'github' in msg or 'code' in msg:
         return "Check out Rithik's GitHub at github.com/Rithik-Sharon-A to see his projects and code. He has several full-stack MERN applications and AI-powered projects showcased there!"

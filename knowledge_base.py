@@ -1,299 +1,87 @@
 """
 Knowledge Base for Rithik Sharon A's Digital Twin
-Contains all professional information for RAG system
+Structured data + strict system prompt (fresher-friendly, no exaggeration).
 """
 
-KNOWLEDGE_BASE = """
-=== RITHIK SHARON A - PROFESSIONAL PROFILE ===
+from __future__ import annotations
 
-ABOUT
-Name: Rithik Sharon A
-Title: MERN Stack Developer
-Specialization: Agentic AI & OpenAI APIs
-Location: India
-Email: rithiksharon.a@gmail.com
-LinkedIn: https://www.linkedin.com/in/rithik-sharon/
-GitHub: https://github.com/Rithik-Sharon-A
-Portfolio: [Your portfolio URL]
-
-PROFESSIONAL SUMMARY
-MERN Stack Developer with a strong foundation in building scalable, responsive web applications using React, Node.js, Express, and MongoDB. Specializing in Agentic AI and OpenAI APIs to automate complex workflows and improve user experiences. Passionate about integrating AI into practical web solutions with clean, efficient code and user-centered design.
-
-=== TECHNICAL SKILLS ===
-
-Frontend Development:
-- React.js
-- Next.js
-- JavaScript/ES6+
-- HTML5/CSS3
-- Redux (State management)
-- Responsive Design
-- Bootstrap
-- Modern UI/UX principles
-
-Backend Development:
-- Node.js
-- Express.js
-- MongoDB (NoSQL databases)
-- REST API design and development
-- API integration
-- Database design and optimization
-- Server-side logic
-- Python & Flask (Backend APIs)
-
-AI & Machine Learning:
-- Agentic AI implementation
-- OpenAI API & SDK integration
-- OpenRouter API
-- AI-powered automation
-- Workflow optimization with AI
-- Intelligent application development
-- Natural language processing applications
-- RAG (Retrieval-Augmented Generation) systems
-
-Development Tools & Practices:
-- Git/GitHub (Version control)
-- Vite (Build tool)
-- npm/yarn (Package management)
-- VS Code
-- Cursor AI
-- Agile methodology
-- Test-driven development
-- CI/CD practices
-- Python virtual environments
-- Flask/FastAPI
-
-=== KEY PROJECTS ===
-
-1. Personal Portfolio Website
-Tech Stack: React, Vite, CSS3, Bootstrap, EmailJS
-Description: Modern, responsive portfolio website with smooth animations, working contact form, and professional design
-Features:
-- Responsive design for all devices
-- EmailJS integration for contact form
-- SEO optimized with meta tags
-- Professional footer with social links
-- Smooth scrolling and animations
-GitHub: https://github.com/Rithik-Sharon-A/personal-blog
-Status: Live and actively maintained
-
-2. Career Digital Twin (This Project!)
-Tech Stack: Python, Flask, OpenAI SDK, JavaScript, HTML/CSS
-Description: AI-powered chatbot that serves as a digital representation, answering questions about skills, experience, and projects
-Features:
-- RAG (Retrieval-Augmented Generation) system
-- OpenAI GPT-4o-mini integration
-- Natural language understanding
-- Real-time AI responses
-- Comprehensive knowledge base
-- Beautiful, responsive UI
-- RESTful API backend
-GitHub: https://github.com/Rithik-Sharon-A/career-digital-twin-
-Purpose: Innovative way for recruiters to learn about me 24/7
-
-3. Additional Projects in Development:
-- SDR Agent: AI-powered sales representative for email automation
-- Deep Research Agent: Multi-agent system for research automation
-- Stock Picker Agent: AI-driven financial analysis tool
-
-=== EXPERTISE AREAS ===
-
-Full Stack Web Development:
-- Building applications from scratch
-- Frontend-backend integration
-- Database design and management
-- RESTful API development
-- User authentication & authorization
-- Real-time features
-- Performance optimization
-
-AI Integration & Automation:
-- Implementing Agentic AI systems
-- OpenAI API & SDK integration for intelligent features
-- Automating complex workflows
-- Building conversational AI
-- Natural language processing
-- AI-driven user experiences
-- Practical AI applications
-- RAG systems with vector databases
-
-=== WHAT MAKES ME UNIQUE ===
-
-1. MERN + AI Combination: Strong full-stack MERN skills with specialized AI knowledge
-2. Practical AI Focus: Not just theory - building real, working AI applications
-3. Automation Mindset: Always looking for ways to make processes more efficient
-4. Modern Tech Stack: Up-to-date with latest technologies and best practices
-5. Problem Solver: Strong analytical and debugging skills
-6. Quick Learner: Rapidly adapts to new technologies and frameworks
-7. User-Centric: Focus on creating excellent user experiences
-8. Full Stack + AI: Can build complete solutions from frontend to AI backend
-
-=== WORK APPROACH ===
-
-Development Philosophy:
-- Clean, maintainable, and well-documented code
-- User-centered design thinking
-- Performance and security first
-- Agile and iterative development
-- Continuous learning and improvement
-- Best practices and coding standards
-- Responsive and accessible design
-
-Problem-Solving Method:
-- Understand requirements thoroughly
-- Break down complex problems
-- Research and prototype solutions
-- Implement with best practices
-- Test rigorously
-- Optimize and refine
-- Document and maintain
-
-=== SOFT SKILLS ===
-
-- Excellent problem-solving abilities
-- Strong communication skills
-- Team collaboration
-- Self-motivated and proactive
-- Attention to detail
-- Time management
-- Adaptability to new technologies
-- Critical thinking
-- Project management
-- Client interaction
-
-=== CURRENT FOCUS & INTERESTS ===
-
-Currently Learning/Working On:
-- Advanced Agentic AI implementations
-- Multi-agent systems
-- AI workflow automation
-- OpenAI SDK and API best practices
-- Performance optimization techniques
-- Modern web architecture patterns
-- Cloud deployment strategies
-- Python for AI/ML applications
-
-Professional Interests:
-- Building AI-powered web applications
-- Automation and workflow optimization
-- Open-source contribution
-- Cutting-edge web technologies
-- Scalable system design
-- User experience optimization
-
-=== AVAILABILITY & GOALS ===
-
-Open To:
-- Full-time opportunities
-- Freelance projects
-- Consulting engagements
-- Collaboration on innovative projects
-- Speaking at tech events
-- Mentoring aspiring developers
-- Open-source contributions
-
-Career Goals:
-- Lead innovative AI-powered projects
-- Build impactful web applications
-- Continue learning and growing
-- Contribute to the tech community
-- Work with cutting-edge technologies
-
-=== CONTACT INFORMATION ===
-
-Best Ways to Reach Me:
-1. Email: rithiksharon.a@gmail.com (Preferred - responds within 24-48 hours)
-2. LinkedIn: https://www.linkedin.com/in/rithik-sharon/ (Professional networking)
-3. GitHub: https://github.com/Rithik-Sharon-A (View code and projects)
-4. Portfolio Contact Form: Available on portfolio website
-
-Response Time: Usually within 24-48 hours
-Time Zone: Indian Standard Time (IST)
-Availability: Open to discussions about opportunities
-
-=== EDUCATION & CONTINUOUS LEARNING ===
-
-Foundation:
-- Strong computer science fundamentals
-- Web development specialization
-- Modern JavaScript ecosystem
-- AI and machine learning concepts
-- Software engineering principles
-- Database management
-- System design
-- Python programming
-
-Continuous Learning:
-- Latest web technologies and frameworks
-- AI advancements and applications
-- Best practices in software development
-- Cloud services and deployment
-- Performance optimization techniques
-- Security best practices
-- UX/UI design principles
-- OpenAI and AI SDKs
-
-Learning Resources:
-- Online courses and tutorials
-- Technical documentation
-- Developer communities
-- Open-source projects
-- Tech blogs and articles
-- Coding challenges and hackathons
-
-=== ACHIEVEMENTS & HIGHLIGHTS ===
-
-Technical Achievements:
-- Built multiple full-stack MERN applications
-- Successfully integrated AI into web applications
-- Deployed production-ready applications
-- Implemented complex state management
-- Created reusable component libraries
-- Optimized application performance
-- Built Python APIs with Flask
-- Integrated OpenAI SDK for intelligent features
-
-Project Highlights:
-- Career Digital Twin (Innovative AI representation with Python backend)
-- Modern portfolio with AI chatbot
-- Scalable web applications
-- Responsive and accessible designs
-- Working contact forms and integrations
-
-=== FREQUENTLY ASKED QUESTIONS ===
-
-Q: What's your primary tech stack?
-A: MERN Stack (MongoDB, Express, React, Node.js) with a specialization in AI integration using Python, OpenAI SDK, and OpenAI APIs.
-
-Q: What makes you different from other developers?
-A: My unique combination of full-stack MERN skills with specialized knowledge in Agentic AI, OpenAI APIs, and Python. I don't just build websites - I build intelligent, automated solutions.
-
-Q: What kind of projects do you enjoy most?
-A: I love projects that combine web development with AI, especially those that automate workflows and improve user experiences through intelligent features.
-
-Q: Are you available for work?
-A: Yes! I'm open to full-time opportunities, freelance projects, and collaborations. Reach out at rithiksharon.a@gmail.com
-
-Q: What's your experience with AI?
-A: I specialize in Agentic AI, OpenAI API, and OpenAI SDK integration. I've built AI chatbots with Python backends, automated workflow systems, and intelligent applications that leverage cutting-edge AI technology.
-
-Q: How do you stay updated with technology?
-A: I actively follow tech blogs, participate in developer communities, work on personal projects, and continuously learn through online courses and documentation.
-
-Q: What's your approach to learning new technologies?
-A: I learn by doing - reading documentation, building projects, experimenting, and applying new concepts to real-world problems.
-
-Q: Can you work remotely?
-A: Absolutely! I'm experienced with remote work and have excellent communication skills for distributed teams.
-
-=== CLOSING NOTE ===
-
-Thank you for chatting with my Digital Twin! I'm passionate about building innovative web applications that leverage AI to create better user experiences. If you're looking for a MERN Stack Developer with AI skills, or if you have an exciting project in mind, I'd love to hear from you!
-
-Feel free to reach out at rithiksharon.a@gmail.com or connect with me on LinkedIn. Let's build something amazing together!
-
-- Rithik Sharon A
-  MERN Stack Developer | AI Specialist
-"""
+from typing import Any, Dict, List
 
 
+KNOWLEDGE_BASE_DATA: Dict[str, Any] = {
+    "metadata": {
+        "owner": "Rithik Sharon A",
+        "role": "MERN Stack Developer (Fresher)",
+        "location": "Chennai, Tamil Nadu, India",
+        "source": "Resume PDF",
+        "usage": "Portfolio RAG Chatbot",
+        "rules": [
+            "Answer strictly from this knowledge base",
+            "Do not exaggerate experience",
+            "Do not claim industry employment",
+            "If information is missing, say it is not available",
+        ],
+    },
+    "system_prompt": (
+        "You are an AI portfolio assistant for Rithik Sharon A. "
+        "Answer only using the provided knowledge base. "
+        "Be honest, professional, and concise. "
+        "Do not assume industry experience."
+    ),
+    "knowledge_base": [
+        {"id": "profile_01", "type": "profile", "content": "Rithik Sharon A is a MERN Stack Developer based in Chennai, Tamil Nadu, India."},
+        {"id": "profile_02", "type": "profile", "content": "He is an early-career developer with strong hands-on experience through full-stack and AI-driven projects."},
+        {"id": "profile_03", "type": "contact", "content": "Contact details include email rithiksharon.a@gmail.com, GitHub username Rithik-Sharon-A, and LinkedIn profile rithik-sharon."},
+        {"id": "career_01", "type": "career_level", "content": "Rithik Sharon A is a fresher and has not yet worked in a full-time industry role."},
+        {"id": "career_02", "type": "career_level", "content": "His experience is primarily project-based, focusing on real-world problem solving through personal and academic projects."},
+        {"id": "education_01", "type": "education", "content": "Rithik completed his Bachelor of Technology in Electronics and Communication Engineering from SASTRA Deemed University, Thanjavur, between 2021 and 2025."},
+        {"id": "education_02", "type": "education", "content": "He completed his Senior Secondary School (Class XII) education at SBIOA Senior Secondary School, Trichy, during 2020-2021."},
+        {"id": "skills_lang_01", "type": "skills_languages", "content": "Rithik is proficient in JavaScript (ES6+), Python, HTML5, and CSS3."},
+        {"id": "skills_frontend_01", "type": "skills_frontend", "content": "Frontend technologies include React.js, Next.js, Tailwind CSS, responsive design principles, and Vite."},
+        {"id": "skills_backend_01", "type": "skills_backend", "content": "Backend development skills include Node.js, Express.js, API handling, bcrypt for password hashing, and JWT-based authentication."},
+        {"id": "skills_db_01", "type": "skills_database", "content": "Rithik has hands-on experience using MongoDB as a NoSQL database."},
+        {"id": "skills_tools_01", "type": "tools", "content": "Development tools include Git, GitHub, VS Code, and Cursor AI."},
+        {"id": "ai_01", "type": "ai_expertise", "content": "Rithik specializes in Agentic AI, prompt engineering, autonomous agents, and OpenAI API integration."},
+        {"id": "ai_02", "type": "ai_expertise", "content": "He has implemented function calling and tool usage within AI agents to enable dynamic behavior."},
+        {"id": "proj1_overview", "type": "project_overview", "project": "Agentic AI Digital Twin", "content": "Rithik developed an Agentic AI-powered digital twin integrated into a MERN-based portfolio website."},
+        {"id": "proj1_ai", "type": "project_ai", "project": "Agentic AI Digital Twin", "content": "The digital twin uses a custom agent framework and OpenAI APIs to enable conversational interactions and autonomous responses."},
+        {"id": "proj1_backend", "type": "project_backend", "project": "Agentic AI Digital Twin", "content": "The backend was implemented using Node.js and Express.js to manage AI requests, routing, and persona control."},
+        {"id": "proj1_frontend", "type": "project_frontend", "project": "Agentic AI Digital Twin", "content": "The frontend portfolio was built using React.js and Framer Motion to deliver a responsive and animated user interface."},
+        {"id": "proj1_stack", "type": "project_stack", "project": "Agentic AI Digital Twin", "content": "Technologies used include Python, OpenAI API, React.js, Node.js, Express.js, MongoDB, Framer Motion, and Vite."},
+        {"id": "proj2_overview", "type": "project_overview", "project": "MERN E-commerce Platform", "content": "Rithik developed a full-stack MERN e-commerce application with secure authentication and real-time product management."},
+        {"id": "proj2_security", "type": "project_security", "project": "MERN E-commerce Platform", "content": "The platform implements JWT-based authentication with bcrypt for secure password hashing."},
+        {"id": "proj2_api", "type": "project_backend", "project": "MERN E-commerce Platform", "content": "A RESTful API was built to support dynamic product search, filtering, and pagination."},
+        {"id": "proj2_state", "type": "project_state", "project": "MERN E-commerce Platform", "content": "Redux Toolkit was used to manage global application state, including cart persistence and user sessions."},
+        {"id": "proj2_ui", "type": "project_frontend", "project": "MERN E-commerce Platform", "content": "The application features a mobile-first UI built with Tailwind CSS and includes a simulated payment gateway."},
+        {"id": "proj2_stack", "type": "project_stack", "project": "MERN E-commerce Platform", "content": "Technologies used include MongoDB, Express.js, React.js, Node.js, Redux Toolkit, Tailwind CSS, JWT, and bcrypt."},
+        {"id": "rules_01", "type": "rules", "content": "If a question is outside the resume or portfolio scope, respond that the information is not available."},
+        {"id": "rules_02", "type": "rules", "content": "Do not claim professional work experience or company employment."},
+    ],
+}
+
+
+def _format_kb_items(items: List[Dict[str, Any]]) -> str:
+    lines: List[str] = []
+    for item in items:
+        item_id = item.get("id", "")
+        item_type = item.get("type", "")
+        project = item.get("project")
+        content_item = item.get("content", "")
+        if project:
+            lines.append(f"- [{item_id}] ({item_type}) [{project}] {content_item}")
+        else:
+            lines.append(f"- [{item_id}] ({item_type}) {content_item}")
+    return "\n".join(lines)
+
+
+KNOWLEDGE_BASE_TEXT: str = _format_kb_items(KNOWLEDGE_BASE_DATA["knowledge_base"])
+
+
+SYSTEM_PROMPT: str = (
+    f"{KNOWLEDGE_BASE_DATA['system_prompt']}\n\n"
+    "RULES:\n"
+    + "\n".join([f"- {r}" for r in KNOWLEDGE_BASE_DATA["metadata"]["rules"]])
+    + "\n\n"
+    "KNOWLEDGE BASE:\n"
+    + KNOWLEDGE_BASE_TEXT
+)
